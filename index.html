@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Technical Documentation Page - Intro to HTML</title>
+  <meta name="description" content="Introduction to HTML" />
+  <meta name="keywords" content="HTML, CSS, coding" />
+  <meta name="robots" content="nofollow" />
+  <meta http-equiv="author" content="Brian Schooler" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Raleway|Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <header class="contents">Contents</header>
+    <ul>
+      <li>
+        <a class="nav-link" href="#structure">Structure</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#text">Text</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#semantic markup">Semantic Markup</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#lists">Lists</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#links">Links</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#linking to other sites">Linking to Other Sites</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#linking to other pages on the same site">Linking to Other Pages on the Same Site</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#email links">Email Links</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#target">Target</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#linking to a specific part of the same page">Linking to a Specific Part of the Same Page</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#images">Images</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#image formats">Image Formats</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#figure and figure caption">Figure and Figure Caption</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#tables">Tables</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#basic table structure">Basic Table Structure</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#table headings">Table Headings</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#spanning columns and rows">Spanning Columns and Rows</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#long tables">Long Tables</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#forms">Forms</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#form structure">Form Structure</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#text input">Text Input</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#password input">Password Input</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#text area">Text Area</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#radio button">Radio Button</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#checkbox">Checkbox</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#drop down list box">Drop Down List Box</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#multiple select box">Multiple Select Box</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#file input box">File Input Box</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#submit button">Submit Button</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#image button">Image Button</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#button & hidden controls">Button & Hidden Controls</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#labelling form controls">Labelling Form Controls</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#grouping form elements">Grouping Form Elements</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#form validation">Form Validation</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#date input">Date Input</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#email & url input">Email & URL Input</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#search input">Search Input</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#extra_markup">Extra Markup</a>
+      </li>
+      <li>
+        <a class="sub-heading" href="#escape_characters">Escape Characters</a>
+      </li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <h1 id="title">HTML Fundamentals</h1>
+    <section id="structure" class="main-section">
+      <header>
+        <h2>Structure</h2>
+      </header>
+      <p>HTML code is composed of elements, or <span class="tag">tags</span> which are the letters contained in brackets. Generally, there will be an opening and a closing tag, although some exceptions apply.<br />
+        <p>The primary HTML tags used to structure text are:</p>
+        <dl>
+          <dt class="tag">&lt;html&gt;</dt>
+          <dd>This indicates to the browser that anything contained between an opening and closing &lt;html&gt; tag is html code.</dd>
+          <dt class="tag">&lt;head&gt;</dt>
+          <dd>This tag contains information about the web page and will generally contain a &lt;title&gt; element.</dd>
+          <dt class="tag">&lt;title&gt;</dt>
+          <dd>The text within the opening and closing &lt;title&gt; tags does not show on the web page, but it does show at the top of the browser, above the URL.</dd>
+          <dt class="tag">&lt;body&gt;</dt>
+          <dd>Anything you want to appear on the main browser window should appear between the &lt;body&gt; opening and closing tags.</dd>
+          <dt class="tag">&lt;h1&gt; <span class="black-text">through</span> &lt;h6&gt;</dt>
+          <dd>These tags are used for headings.</dd>
+          <dt class="tag">&lt;p&gt;</dt>
+          <dd>This tag indicates a paragraph.</dd>
+        </dl>
+        <code>
+    <div class="sample-code">
+      <span class="purple-text">&lt;!DOCTYPE html&gt;</span><br /> <span class="tag">&lt;html&gt;</span>
+      <div class="tab"><span class="tag">&lt;h1&gt;</span>This is Our Heading<span class="tag">&lt;/h1&gt;</span></div>
+      <div class="tab"><span class="tag">&lt;h2&gt;</span>This is Our Subheading<span class="tag">&lt;/h2&gt;</span></div>
+      <div class="tab"><span class="tag">&lt;p&gt;</span>This is a paragraph.<span class="tag">&lt;/p&gt;</span></div> <span class="tag">&lt;/html&gt;</span>
+    </div>
+    <div class="sample-results">
+      <p class="sample-h1">This is Our Heading</p>
+      <p class="sample-h2">This is Our Subheading</p>
+      <p class="sample-p">This is a paragraph</p>
+    </div>
+    </code>
+        <p><span class="attribute">Attributes</span> further identify the contents of an element and are comprised of two parts: a <i>name</i> and a <i>value</i>, separated by an equals sign.</p>
+        <code>
+    <div class="sample-code">
+      <p><span class="tag">&lt;p</span>
+        <span class="attribute">lang</span>=
+        <span class="value">"en-us"</span>
+        <span class="tag">&gt;</span>Paragraph in English
+        <span class="tag">&lt;/p&gt;</span></p>
+    </div>
+    <div class="sample-results">
+      <p lang="en us">Paragraph</p>
+    </div>
+    </code>
+        <p>Below is a list of common attributes:</p>
+        <dl>
+          <dt><span class="attribute">alt</span></dt>
+          <dd>Specifies an alternative text for an image when the image cannot be displayed.</dd>
+          <dt><span class="attribute">disabled</span></dt>
+          <dd>Specifies that an input element should be disabled.</dd>
+          <dt><span class="attribute">href</span></dt>
+          <dd>Specifies the URL for a link.</dd>
+          <dt><span class="attribute">id</span></dt>
+          <dd>Specifies a unique ID for an element. On a single page, no two id attributes should be given the same value.</dd>
+          <dt><span class="attribute">src</span></dt>
+          <dd>Specifies the URL for an image</dd>
+          <dt><span class="attribute">style</span></dt>
+          <dd>Specifies an inline CSS style for an element.</dd>
+          <dt><span class="attribute">title</span></dt>
+          <dd>Specifies extra information about an element (displayed as a tool tip).</dd>
+        </dl>
+    </section>
+    <section id="text" class="main-section">
+      <header>
+        <h2>Text</h2>
+      </header>
+      <p>You can change the way the text appears on the screen by using additional tags:</p>
+      <dl>
+        <dt class="tag">&lt;b&gt;</dt>
+        <dd>This tag can make words and letters appear <b>bold</b>.</dd>
+        <dt class="tag">&lt;i&gt;</dt>
+        <dd>This tag can make words and letters appear <i>italic</i>.</dd>
+        <dt class="tag">&lt;sup&gt;</dt>
+        <dd>This is used to <sup>superscript</sup> text.</dd>
+        <dt class="tag">&lt;sub&gt;</dt>
+        <dd>This is used to <sub>subscript</sub> text.</dd>
+        <dt class="tag">&lt;br /&gt;</dt>
+        <dd>This is a line break, and will cause any text after it to appear on the next line. This is also a self-closing tag, which is why the forward slash comes inside of it.</dd>
+        <dt class="tag">&lt;hr /&gt;</dt>
+        <dd>This is a horizontal rule, which creates a horizontal line across the page, and is also a self-closing tag.</dd>
+      </dl>
+      </p>
+      <h3 id="semantic markup">Semantic Markup</h3>
+      <p>The following tags are <i>semantic markup</i> which are not intended to alter the structure of the webpage and should not be used as such. They do, however, change the way the text looks but it's important to remember that's not their sole purpose.
+        The primary purpose to use semantic markup is to provide extra information for screen readers or search engines.</p>
+      <dl>
+        <dt class="tag">&lt;strong&gt;</dt>
+        <dd>Indicates that the content is of <b>strong</b> importance. The contents of this tag will show in bold by default.</dd>
+        <dt class="tag">&lt;em&gt;</dt>
+        <dd>Indicates <i>emphasis</i> that subtly changes the meaning of a sentence. The contents of this tag will show in italic by default.</dd>
+        <dt class="tag">&lt;blockquote&gt;</dt>
+        <dd>Used for longer quotes that take up an entire paragraph, a blockquote is usually indented by the browser.</dd>
+        <dt class="tag">&lt;q&gt;</dt>
+        <dd>Used for shorter <q>quotes</q> within a paragraph, this tag should also put quotes around the text (however Internet Explorer does not).</dd>
+        <dt class="tag">&lt;abbr&gt;</dt>
+        <dd>Used with a <i>title</i> attribute, you can type only a word's abbreviation and when a user hovers over the word they will be able to see the full term. This tag is used as such:</dd>
+      </dl>
+      <code>
+  <div class="sample-code">
+    <span class="tag">&lt;abbr</span>
+    <span class="attribute">title</span>=
+    <span class="value">"President of the United States"</span>
+    <span class="tag">&gt;</span>POTUS
+    <span class="tag">&lt;abbr&gt;</span>
+  </div>
+  <div class="sample-results">
+    <appr title="President of the United States">
+      <p>POTUS</p>
+      </abbr>
+  </div>
+    </code>
+      <dl>
+        <dt class="tag">&lt;cite&gt;</dt>
+        <dd>Used to indicate where a citation is from when referencing another piece of work.</dd>
+        <dt class="tag">&lt;dfn&gt;</dt>
+        <dd>Used to indicate the <i>defining instance</i> of a new term the first time you use it in a document. May or may not appear in italics depending on the browser.</dd>
+        <dt class="tag">&lt;address&gt;</dt>
+        <dd>Used to contain contact details for the author of the page. Often displayed in italics.</dd>
+        <dt class="tag">&lt;ins&gt;</dt>
+        <dd>Can be used to show that content has been <ins>inserted</ins> into a document.</dd>
+        <dt class="tag">&lt;del&gt;</dt>
+        <dd>Can be used to show that content has been <del>deleted</del> from a document.</dd>
+        <dt class="tag">&lt;s&gt;</dt>
+        <dd>Indicates that something is no longer accurate or relevant, but should not be deleted. <s>Should appear as a strikethrough.</s></dd>
+      </dl>
+    </section>
+    <section id="lists" class="main-section">
+      <header>
+        <h2>Lists</h2>
+      </header>
+      <dl>
+        <dt class="tag">&lt;ol&gt;</dt>
+        <dd>Ordered List. These are lists where each item on the list is numbered.</dd>
+        <dt class="tag">&lt;li&gt;</dt>
+        <dd>List Item. Each item on the list is placed between an &lt;li&gt; opening tag and an &lt/li&gt closing tag</dd>
+        <dt class="tag">&lt;ul&gt;</dt>
+        <dd>Unordered List. These are lists that begin with a bullet point, rather than a number.</dd>
+        <dt class="tag">&lt;dl&gt;</dt>
+        <dd>Definition List. These are made up of a set of terms along with the definitions for each of those terms.</dd>
+        <dt class="tag">&lt;dt&gt;</dt>
+        <dd>Definition Term. Used to contain the term being defined.</dd>
+        <dt class="tag">&lt;dd&gt;</dt>
+        <dd>Definition. This will appear indented from the definition term.</dd>
+      </dl>
+      <p>You can put a second list inside of an &lt;li&gt; element to create a sub-list or nested list.
+      </p>
+    </section>
+    <section id="links" class="main-section">
+      <header>
+        <h2>Links</h2>
+      </header>
+      <p>Links allow you to:</p>
+      <ul>
+        <li>Move from one website to another</li>
+        <li>Move from one page to another on the same website</li>
+        <li>Move from one part of a web page to another part of the same page</li>
+        <li>Open a new browser window</li>
+        <li>Start up your email program and address a new email to someone</li>
+      </ul>
+      <p>Links are created using the &lt;a&gt; element. Anything between the opening and closing &lta&gt tag will be text the borrower can click on.<br /> Example:</p>
+      <code>
+  <div class="sample-code">
+    <span class="tag">&lt;a</span>
+    <span class="attribute">href</span>=
+    <span class="value">"http://www.brianschooler.com"</span>
+    <span class="tag">&gt;</span>Brian Schooler
+    <span class="tag">&lt;/a&gt;</span>
+  </div>
+  <div class="sample-results">
+    <p><a href="http://www.brianschooler.com" target="_blank">Brian Schooler</a>
+      <p>
+  </div>
+    </code>
+      <h3 id="linking to other sites">Linking to Other Sites</h3>
+      <p>When linking to another site, the href will be the full URL for the site.</p>
+      <h3 id="linking to other pages on the same site">Linking to Other Pages on the Same Site</h3>
+      <p>When you are linking to other pages within the same site, it is not necessary to specify the domain name in the URL. If all of the website's pages are in the same folder, the value of the href attribute is just the name of the file. For example:
+        "index.html", "about.html", etc. If the website's pages are not in the same folder, you would have to specify the child or grandchild folder as well. For example: "music/listings.html" or "music/listings/rock.html".</p>
+      <h3 id="email links">Email Links</h3>
+      <p>To create a link that opens a user's email program and addresses an email to a specified email address, you will start the href attribute with "mailto:" followed by the email address you want the email to be sent to. Example:</p>
+      <code>
+  <div class="sample-code">
+    <span class="tag">&lt;a</span>
+    <span class="attribute">href</span>=
+    <span class="value">"mailto:schooler94@gmail.com"</span>
+    <span class="tag">&gt;</span>Email Brian
+    <span class="tag">&lt;/a&gt;</span>
+  </div>
+  <div class="sample-results">
+    <p><a href="mailto:schooler94@gmail.com" target="_blank">Email Brian</a></p>
+  </div>
+    </code>
+      <h3 id="target">Target</h3>
+      <p>If you want a link to open in a new window, you would use the <span class="attribute">target</span>=<span class="value">"_blank"</span> attribute and value.</p>
+      <h3 id="linking to a specific part of the same page">Linking to a Specific Part of the Same Page</h3>
+      <p>Before you can link to a specific part of a page, you must identify the points in the page that the link will go to. This can be done by using the id attribute. To link to an element using the id attribute, the value of the href attribute would
+        start with the # symbol, followed by the id attribute you wish to jump to.</p>
+      <h3 id="linking to a specific part of another page">Linking to a Specific Part of Another Page</h3>
+      <p>To link to a specific part of a different page, you would specify the URL in the href attribute followed by the # symbol and id of the section you'd like the link to jump to.</p>
+    </section>
+    <section id="images" class="main-section">
+      <header>
+        <h2>Images</h2>
+      </header>
+      <p>When building a website from scratch, it is a good idea to create a folder for all of the images used on the site.<br /> To add an image to the page, you will use the <span class="tag">&lt;img&gt;</span> tag. This tag is a self-closing tag. Two
+        attributes are required within the <span class="tag">&lt;img&gt;</span> tag:</p>
+      <ul>
+        <li><span class="attribute">src</span> - Tells the browser where to find the image file, which is typically a URL.</li>
+        <li><span class="attribute">alt</span> - This is where you will provide a text description of the image in case it is not able to be viewed.</li>
+      </ul>
+      <p>Although these two attributes are the only ones required, you can also use the <span class="attribute">title</span> attribute to provide additional information when a user hovers their mouse over it. Often, an image will also contain <span class="attribute">height</span>        and <span class="attribute">width</span> attributes to define its size. However, the size can also be specified in CSS rather than in an image attribute.<br /> If you place an image within paragraph tags, it will appear inline with the text unless
+        otherwise specified.<br /> Three Rules for Creating Images:
+      </p>
+      <ol>
+        <li>Save images in the right format - this is usually jpeg, gif, or png</li>
+        <li>Save images at the right size - Save at the same height and width as it will apear on the website for faster loading and minimizing distortion</li>
+        <li>Use the correct resolution - Most computer screens show websites at 72px per square inch (ppi), so saving images at a higher resolution may cause longer download times</li>
+      </ol>
+      <h3 id="image formats">Image Formats</h3>
+      <ul>
+        <li>JPEG - Should be used when there are many different colors in a picture.</li>
+        <li>GIF - Should be used when a picture has an area that is filled with exactly the same color (flat color). Usually seen in drawings rather than pictures.</li>
+      </ul>
+      <h3 id="figure and figure caption">Figure and Figure Caption</h3>
+      <dl>
+        <dt class="tag">&lt;figure&gt;</dt>
+        <dd>Used in HTML5 to contain images and their caption to keep the two associated. You can have multiple images inside one figure as long as they share the same caption</dd>
+        <dt class="tag">&lt;figcaption&gt;</dt>
+        <dd>Allows you to add a caption to an image. This will fall within the <i>figure</i> element and under the <i>img</i> element to produce a caption directly below the image.</dd>
+      </dl>
+    </section>
+    <section id="tables" class="main-section">
+      <header>
+        <h2>Tables</h2>
+      </header>
+      <p>A table represents information in a grid format.
+      </p>
+      <h3 id="basic table structure">Basic Table Structure</h3>
+      <dl>
+        <dt class="tag">&lt;table&gt;</dt>
+        <dd>This element is used to create a table. The contents of the table are written out row by row.</dd>
+        <dt class="tag">&lt;tr&gt;</dt>
+        <dd>Stands for Table Row, indicates the start of each row and is followed by one or more <span class="tag">&lt;td&gt;</span> tags (depending on the number of cells in that row), completed with a closing <span class="tag">&lt;/tr&gt;</span> tag.</dd>
+        <dt class="tag">&lt;td&gt;</dt>
+        <dd>Stands for Table Data, represents each cell of the table.</dd>
+      </dl>
+      <h3 id="table headings">Table Headings</h3>
+      <dl>
+        <dt class="tag">&lt;th&gt;</dt>
+        <dd>The Table Heading element is used the same as &lt;td&gt; but represents the heading for either a column or a row. This element helps people using screen readers, improves SEO, and allows for better control over the appearance of tables in CSS.
+          This element usually displays the headings in bold font and centered in the cell.</dd>
+      </dl>
+      <h3 id="spanning columns and rows">Spanning Columns and Rows</h3>
+      <p>Similar to <q>merge cells</q> in excel, spanning columns allows entries in a table to stretch across more than one column. Spanning columns is used with the <span class="attribute">colspan</span> attribute inside either the <span class="tag">&lt;th&gt;</span>        or <span class="tag">&lt;td&gt;</span> elements with the value equal to however many columns you would like the data to span.<br /> Spanning Rows works the same as spanning columns, but uses the <span class="attribute">rowspan</span> attribute
+        to allow a piece of data to expand down a certain amount of rows. This can also be applied in either the <span class="tag">&lt;th&gt;</span> or <span class="tag">&lt;td&gt;<span> elements.
+    </p>
+    <h3 id="long tables">Long Tables</h3>
+    <p>Using the elements for Long Tables helps people with screen readers and helps you to style these sections differently.</p>
+    <dl>
+      <dt class="tag">&lt;thead&gt;</dt>
+      <dd>The headings of the table should be inside of this element.</dd>
+      <dt class="tag">&lt;tbody&gt;</dt>
+      <dd>The body should be contained in this element.</dd>
+      <dt class="tag">&lt;tfoot&gt;</dt>
+      <dd>The footer should sit within this element.</dd>
+    </dl>
+    <p>A Long Table can also be useful if the table is so long that a user needs to scroll but you'd like to keep the contents of the header still visible.
+    </p>
+    </section>
+    <section id="forms" class="main-section">
+      <header>
+        <h2>Forms</h2>
+      </header>
+    <p>A form allows you to collect information from visitors to your website.
+    </p>
+    <h3 id="form structure">Form Structure</h3>
+    <ul>
+      <li><span class="tag">&lt;form&gt;</span> - Form controls live inside a <span class="tag">&lt;form&gt;</span>element. This element should alwats carry the <span class="attribute">action</span> attribute and will usually have a <span class="attribute">method</span>        and <span class="attribute">id</span> attribute too.</li>
+        <ul>
+          <li><span class="attribute">action</span> - This attribute is required in a form and its value will be the URL for the page on the server that will receive the information when the form is submitted.</li>
+          <li><span class="attribute">method</span> - Forms can be sent using one of two methods, <i>get</i> or <i>post</i>. If a method attribute is not used, the form data will default to the get method.</li>
+          <ul>
+            <li>With the <i>get</i> method, the values from the form are added to the end of the URL specified in the action attribute which is ideal for short forms (like search boxes) or when you are just retrieving data from the web server (not sending
+              information that adds to or deletes from a database).</li>
+            <li>With the <i>post</i> method, the values are sent in what are known as HTTP headers. The post method should be used if the form allows users to upload files, is very long, contains sensitive data, or adds information to, or deletes information
+              from, a database.</li>
+          </ul>
+          <li><span class="attribute">id</span> - This attribute is used to identify the form distinctly from other elements on the page. <a href="#id-attribute">Learn more about the <span class="attribute">id</span> attribute here</a>.</li>
+        </ul>
+        </ul>
+        <h3 id="text input">Text Input</h3>
+        <ul>
+          <li><span class="tag">&lt;input&gt;</span> - The <span class="tag">&lt;input&gt;</span> element is used to create several different controls. The value of the <span class="attribute">type</span> attribute determines what kind of input they will
+            be creating.</li>
+          <ul>
+            <li><span class="attribute">type</span>=<span class="value">"text"</span> - This type of attribute will result in a single line of text as the input.</li>
+            <li><span class="attribute">name</span> - Identifies the form control. Required for each form control.</li>
+            <li><span class="attribute">maxlength</span> - Limits the number of characters a user may enter into the text field.</li>
+          </ul>
+        </ul>
+        <h3 id="password input">Password Input</h3>
+        <ul>
+          <li><span class="tag">&lt;input&gt;</span> - The <span class="tag">&lt;input&gt;</span> element is used to create several different controls. The value of the <span class="attribute">type</span> attribute determines what kind of input they will
+            be creating.</li>
+          <ul>
+            <li><span class="attribute">type</span>=<span class="value">"password"</span> - Creates a text box that acts just like a single-line text input, but the characters are blocked out.</li>
+            <li><span class="attribute">name</span> - The name attribute indicates the name of the password input, which is sent to the server with the password the user enters.
+              <li><span class="attribute">maxlength</span> - Limits the number of characters a user may enter into the text field.</li>
+          </ul>
+        </ul>
+        <h3 id="text area">Text Area</h3>
+        <ul>
+          <li><span class="tag">&lt;textarea&gt;</span> - The &lttextarea&gt tag is used to create a multi-line text input. This tag is <i>not</i> an empty element and therefore required a closing tag. Any text that appears between the opening and closing
+            tags will appear in the text box when the page loads, and the user would have to delete the text or it will be sent to the server as well (JavaScript can be used to clear this text when a user clicks in the text area).</li>
+        </ul>
+        <h3 id="radio button">Radio Button</h3>
+        <ul>
+          <li><span class="tag">&lt;input&gt;</span> - The <span class="tag">&lt;input&gt;</span> element is used to create several different controls. The value of the <span class="attribute">type</span> attribute determines what kind of input they will
+            be creating.</li>
+          <ul>
+            <li><span class="attribute">type</span>=<span class="value">"radio"</span> - Allows users to pick just one of a number of options.</li>
+            <li><span class="attribute">name</span> - Identifies the form control. Required for each form control.</li>
+            <li><span class="attribute">value</span> - Indicates the value that is sent to the server for the selected option. Each of the buttons should have a different value. Additionally, a radio button cannot be deselected once selected - only the option
+              can be changed.</li>
+            <li><span class="attribute">checked</span> - Can be used with a radio button or checkbox to indicate which value (if any) should be selected when the page loads.</li>
+          </ul>
+        </ul>
+        <h3 id="checkbox">Checkbox</h3>
+        <ul>
+          <li><span class="tag">&lt;input&gt;</span> - The <span class="tag">&lt;input&gt;</span> element is used to create several different controls. The value of the <span class="attribute">type</span> attribute determines what kind of input they will
+            be creating.</li>
+          <ul>
+            <li><span class="attribute">type</span>=<span class="value">"checkbox"</span> - Allows users to select (and unselect) one or more options in answer to a question.</li>
+            <li><span class="attribute">name</span> - Identifies the form control. Required for each form control.</li>
+            <li><span class="attribute">value</span> - Indicates the value that is sent to the server for the selected option. Each of the buttons should have a different value. Additionally, a radio button cannot be deselected once selected - only the option
+              can be changed.</li>
+            <li><span class="attribute">checked</span> - Can be used with a radio button or checkbox to indicate which value (if any) should be selected when the page loads.</li>
+          </ul>
+        </ul>
+        <h3 id="drop down list box">Drop Down List Box</h3>
+        <ul>
+          <li><span class="tag">&lt;select&gt;</span> - The <span class="tag">&lt;select&gt;</span> tag is used to create a drop down list box (also known as a select box) to select one option from a drop down list. The <span class="tag">&lt;select&gt;</span>            box will contain two or more <span class="tag">&lt;option&gt;</span> elements to create the drop down. This must also have a name attribute.</li>
+          <ul>
+            <li><span class="attribute">name</span> - Identifies the form control. Required for each form control.</li>
+          </ul>
+          <li><span class="tag">&lt;option&gt;</span> - The <span class="tag">&lt;option&gt;</span> element is used to specify options that the user can select from. The words between the opening and closing tags will be shown to the user in the drop down
+            box.</li>
+          <ul>
+            <li><span class="attribute">value</span> - Indicates the value that is sent to the server for the selected option. Each of the buttons should have a different value. Additionally, a radio button cannot be deselected once selected - only the option
+              can be changed.</li>
+            <li><span class="attribute">selected</span> - Used to indicate the option that should be selected by default when the page loads. If this attribute is not used, the first option will be selected by default when the page loads.</li>
+          </ul>
+        </ul>
+        <h3 id="multiple select box">Multiple Select Box</h3>
+        <ul>
+          <li><span class="tag">&lt;select&gt;</span> - The <span class="tag">&lt;select&gt;</span> tag is used to create a drop down list box (also known as a select box) to select one option from a drop down list. The <span class="tag">&lt;select&gt;</span>            box will contain two or more <span class="tag">&lt;option&gt;</span> elements to create the drop down. This must also have a name attribute.</li>
+          <ul>
+            <li><span class="attribute">size</span> - You can turn a drop down select box into a box that shows more than one option by adding a size attribute. Its value should be the number of options you want to show at once. This attribute may have some
+              issues with certain browsers - proceed with caution.</li>
+            <li><span class="attribute">multiple</span> - Allows users to select multiple options from the list.
+          </ul>
+        </ul>
+        <h3 id="file input box">File Input Box</h3>
+        <ul>
+          <li><span class="tag">&lt;input&gt;</span> - The &lt;input&gt; element is used to create several different controls. The value of the type attribute determines what kind of input they will be creating.</li>
+          <ul>
+            <li><span class="attribute">type</span>=<span class="value">"file"</span> - Creates a box that looks like a text input followed by a <i>browse</i> button which will allow the user to select a file from their cmputer to be uploaded from the website.
+              When allowing a user to upload files, the method attribute must have a value of post.</li>
+          </ul>
+        </ul>
+        <h3 id="submit button">Submit Button</h3>
+        <ul>
+          <li><span class="tag">&lt;input&gt;</span> - The &lt;input&gt; element is used to create several different controls. The value of the type attribute determines what kind of input they will be creating.</li>
+          <ul>
+            <li><span class="attribute">type</span>=<span class="value">"submit"</span> - Used to send a form to the server.</li>
+            <li><span class="attribute">name</span> - Can be used with <span class="attribute">type</span>=<span class="value">"submit"</span> but is not required.</li>
+            <li><span class="attribute">value</span> - Used to control the text that appears on a button.</li>
+          </ul>
+        </ul>
+        <h3 id="image button">Image Button</h3>
+        <ul>
+          <li><span class="tag">&lt;input&gt;</span> - The &lt;input&gt; element is used to create several different controls. The value of the type attribute determines what kind of input they will be creating.</li>
+          <ul>
+            <li><span class="attribute">type</span>=<span class="value">"image"</span> - If you want to use an image for the submit button, this will allow you to do so.</li>
+          </ul>
+        </ul>
+        <h3 id="button & hidden controls">Button & Hidden Controls</h3>
+        <ul>
+          <li><span class="tag">&lt;button&gt;</span> - Allows users more control over how their buttons appear, and allows other elements to appear inside of the button.</li>
+          <li><span class="tag">&lt;input&gt;</span> - The &lt;input&gt; element is used to create several different controls. The value of the type attribute determines what kind of input they will be creating.</li>
+          <ul>
+            <li><span class="attribute">type</span>=<span class="value">"hidden"</span> - Allows developers to add values to forms that users cannot see.</li>
+          </ul>
+        </ul>
+        <h3 id="labelling form controls">Labelling Form Controls</h3>
+        <ul>
+          <li><span class="tag">&lt;label&gt;</span> - Each form control should have its own label element as this makes the form accessible to vision-impaired users. The label element can be used in one of two ways:</li>
+          <ol>
+            <li>It can wrap around both the text description and the form input.</li>
+            <li>It can be kept separate from the form control and use the for attribute to indicate which form control it is a label for</li>
+          </ol>
+          <li><span class="attribute">for</span> - The for attribute states which form control the label belongs to. The value of the for attribute matches that of the id attribute on the form control it is labeling.</li>
+        </ul>
+        <h3 id="grouping form elements">Grouping Form Elements</h3>
+        <ul>
+          <li><span class="tag">&lt;fieldset&gt;</span> - You can group related form controls together inside the <span class="tag">&lt;fieldset&gt;</span> element. This is particularly helpful for longer forms. Most browsers will show the fieldset with a
+            line around the edge to show how they are related.</li>
+          <li><span class="tag">&lt;legend&gt;</span> - The <span class="tag">&lt;legend&gt;</span> element can come directly after the opening <span class="tag">&lt;fieldset&gt;</span> tag and contains a caption which helps identify the purpose of that group
+            of form controls.</li>
+        </ul>
+        <h3 id="form validation">Form Validation</h3>
+        <ul>
+          <span><span class="attribute">required</span> - Attribute that requires a field to be completed before being submitted</li>
+        </ul>
+        <h3 id="date input">Date Input</h3>
+        <ul>
+          <li><span class="tag">&lt;input&gt;</span> - The &lt;input&gt; element is used to create several different controls. The value of the type attribute determines what kind of input they will be creating.</li>
+          <ul>
+            <li><span class="attribute">type</span>=<span class="value">"date"</span> - Creates a date input in the text box</li>
+          </ul>
+        </ul>
+        <h3 id="email & url input">Email & URL Input</h3>
+        <ul>
+          <li><span class="tag">&lt;input&gt;</span> - The &lt;input&gt; element is used to create several different controls. The value of the type attribute determines what kind of input they will be creating.</li>
+          <ul>
+            <li><span class="attribute">type</span>=<span class="value">"email"</span> - Allows the browser to check that the user has provided information in the correct format of an email address.</li>
+            <li><span class="attribute">type</span>=<span class="value">"url"</span> - Allows the browser to check that the user has provided information in the format of a URL.</li>
+          </ul>
+        </ul>
+        <h3 id="search input">Search Input</h3>
+        <ul>
+          <li><span class="tag">&lt;input&gt;</span> - The &lt;input&gt; element is used to create several different controls. The value of the type attribute determines what kind of input they will be creating.</li>
+          <ul>
+            <li><span class="attribute">type</span>=<span class="value">"search"</span> - Creates a single line text box for search queries. The &ltinput&gt element should have a type attribute whose value is search</li>
+            <li><span class="attribute">placeholder</span> - value should be text that will be shown in the text box until the user clicks that area.</li>
+          </ul>
+        </ul>
+    </section>
+    <section id="extra_markup" class="main-section">
+      <header>
+        <h2>Extra Markup</h2>
+      </header>
+      <dl>
+        <dt>DOCTYPE</dt>
+        <dd>Each web page should begin with a <span class="purple-text">DOCTYPE</span> declaration to tell the browser which version of HTML the page is using</dd>
+        <dt>Comments in HTML</dt>
+        <dd>A <span class="dark-purple-text">comment in your code</span> can be added without appearing in your browser by placing it between &lt;!-- and --&gt;. Comments are helpful when you come back to your code at a later date and need to understand it.
+          Comments can also be used to block a segment of code from appearing in the browser.</dd>
+        <dt>ID Attribute</dt>
+        <dd>Every HTML element can carry an <span class="attribute">id</span> attribute to identify that element from other elements on the page. Its value should begin with a letter or an underscore. No two elements on the same page should have the same
+          value for their id attribute.</dd>
+        <dt>Class Attribute</dt>
+        <dd>Every HTML element can also carry a <span class="attribute">class</span> attribute. This can help you identify several elements as being different from other elements on the page or differentiate between links that point to your own site and links
+          that point to other sites.</dd>
+        <dt>Block Elements</dt>
+        <dd>Elements that always start on a new line in the browser window (such as <span class="tag">&lt;h1&gt;</span>, <span class="tag">&lt;p&gt;</span>, <span class="tag">&lt;li&gt;</span>, etc.)</dd>
+        <dt>Inline Elements</dt>
+        <dd>Elements that will always appear to continue on the same line as their neighboring elements (such as <span class="tag">&lt;a&gt;</span>, <span class="tag">&lt;b&gt;</span>, <span class="tag">&lt;img&gt;</span>, etc.)</dd>
+        <dt>Grouping Text & Elements in a Block</dt>
+        <dd>The <span class="tag">&lt;div&gt;</span> element allows you to group a set of elements together in one block-level box. The primary benefit to the <span class="tag">&lt;div&gt;</span> element is that using an id or class attribute will allow you
+          to create CSS style rules to change the appearance of all the elements contained within it.</dd>
+        <dt>Grouping Text & Elements Inline</dt>
+        <dd>The <span class="tag">&lt;span&gt;</span> element acts like an inline equivalent of the &ltdiv&gt element.</dd>
+        <dt>iFrames</dt>
+        <dd>An <span class="tag">&lt;iframe&gt;</span> is like a little window that has been cut into your page - and in that window you can see another page. The term iframe is an abbreviation of inline frame. A common use of iframes is to embed a Google
+          Map into the page. The content of the iframe can be any html page. The iframe will use the following attributes:</dd>
+        <ul>
+          <ul>
+            <li><span class="attribute">src</span> - Specifies the URL of the page to show in the frame.</li>
+            <li><span class="attribute">height</span> - Specifies the height of the iframe in pixels</li>
+            <li><span class="attribute">width</span> - Specifies the width of the iframe in pixels</li>
+            <li><span class="attribute">seamless</span> - Can be applied to an iframe where scrollbars are not desired. Does not need a value, but can be given the value of seamless.</li>
+          </ul>
+        </ul>
+        <dt>Information About Your Pages</dt>
+        <dd>The <span class="tag">&lt;meta&gt;</span> element lives inside the <span class="id">&lt;head&gt;</span> element and contains information about your web page. This is not visible to users but fulfills a number of purposes such as telling search
+          engines about the page, who created it, and whether or not it is time sensitive. The <span class="tag">&lt;meta&gt;</span> element is an empty element and does not need a closing tag. In a meta element, the name and content attributes tend to
+          be used together, where the name attribute specifies the property you are setting, and the content attribute specifies the value you want to give this property. The value of the name attribute can be anything, but some common uses are as follows:</dt>
+          <ul>
+            <ul>
+              <li><span class="attribute">description</span> - This contains a description of the page. The description is commonly used by search engines to understand what the page is about and should be a maximum of 155 characters.</li>
+              <li><span class="attribute">keywords</span> - Contains a list of comma-separated words that a user might search on to find the page (may no longer have an affect on how search engines index the site)</li>
+              <li><span class="attribute">robots</span> - Indicates whether a search engine should add this page to their search results or not. A value of <span class="value">noindex</span> can be used if the page should not be added. A value of <span class="value">nofollow</span>                can be used if search engines should add this page in their search results but not any pages that it links to.</li>
+              <li><span class="attribute">author</span> - Defines the author of the web page</li>
+              <li><span class="attribute">pragma</span> - Prevents the browser from catching the page</li>
+              <li><span class="attribute">expires</span> - Can be used to indicate when the page should expire. Must be in the format of "Fri, 04 Apr 2014 23:59:59 GMT"</li>
+            </ul>
+          </ul>
+      </dl>
+      <h3 id="escape characters">Escape Characters</h3>
+      <p>Escape characters are characters that are used in and reserved by HTML code, and will therefore not show up on the webpage unless they are applied to the code as the following "escape" characters.</p>
+      <ul>
+        <table>
+          <tr>
+            <th>Symbol</th>
+            <th>Symbol Name</th>
+            <th>Option 1</th>
+            <th>Option 2</th>
+          </tr>
+          <tr>
+            <td class="symbol">&lt;</td>
+            <td>Less-Than Sign</td>
+            <td>&amp;lt;</td>
+            <td>&amp#60;</td>
+          </tr>
+          <tr>
+            <td class="symbol">&gt;</td>
+            <td>Greater-Than Sign</td>
+            <td>&amp;gt;</td>
+            <td>&amp;#62;</td>
+          </tr>
+          <tr>
+            <td class="symbol">&amp;</td>
+            <td>Ampersand</td>
+            <td>&amp;amp;</td>
+            <td>&amp;#38;</td>
+          </tr>
+          <tr>
+            <td class="symbol">&quot;</td>
+            <td>Quotation Mark</td>
+            <td>&amp;quot;</td>
+            <td>&amp;#34;</td>
+          </tr>
+          <tr>
+            <td class="symbol">&cent;</td>
+            <td>Cent Sign</td>
+            <td>&amp;cent;</td>
+            <td>&amp;#162;</td>
+          </tr>
+          <tr>
+            <td class="symbol">&pound;</td>
+            <td>Pound Sign</td>
+            <td>&amp;pound;</td>
+            <td>&amp;#163;</td>
+          </tr>
+          <tr>
+            <td class="symbol">&yen;</td>
+            <td>Yen Sign</td>
+            <td>&amp;yen;</td>
+            <td>&amp;#165l</td>
+          </tr>
+          <tr>
+            <td class="symbol">&euro;</td>
+            <td>Euro Sign</td>
+            <td>&amp;euro;</td>
+            <td>&amp;#8364;</td>
+          </tr>
+          <tr>
+            <td class="symbol">&copy;</td>
+            <td>Copyright Symbol</td>
+            <td>&amp;copy;</td>
+            <td>&amp;#169;</td>
+          </tr>
+          <tr>
+            <td class="symbol">&reg;</td>
+            <td>Registered Trademark</td>
+            <td>&amp;reg;</td>
+            <td>&amp;#174;</td>
+          </tr>
+          <tr>
+            <td class="symbol">&trade;</td>
+            <td>Trademark</td>
+            <td>&amp;trade;</td>
+            <td>&amp;#8482;</td>
+          </tr>
+          <tr>
+            <td class="symbol">&lsquo;</td>
+            <td>Left Single Quote</td>
+            <td>&amp;lsquo;</td>
+            <td>&amp;#8216;</td>
+          </tr>
+          <tr>
+            <td class="symbol">&rsquo;</td>
+            <td>Right Single Quote</td>
+            <td>&amp;rsquo;</td>
+            <td>&amp;#8217;</td>
+          </tr>
+          <tr>
+            <td class="symbol">&ldquo;</td>
+            <td>Left Double Quote</td>
+            <td>&amp;ldquo;</td>
+            <td>&amp;#8220;</td>
+          </tr>
+          <tr>
+            <td class="symbol">&rdquo;</td>
+            <td>Right Double Quote</td>
+            <td>&amp;rdquo;</td>
+            <td>&amp;#8221;</td>
+          </tr>
+          <tr>
+            <td class="symbol">&times;</td>
+            <td>Multiplication Sign</td>
+            <td>&amp;times;</td>
+            <td>&amp;#215;</td>
+          </tr>
+          <tr>
+            <td class="symbol">&divide;</td>
+            <td>Division Sign</td>
+            <td>&amp;divide;</td>
+            <td>&amp;#247;</td>
+          </tr>
+        </table>
+    </section>
+  </main>
+</body>
+
+</html>

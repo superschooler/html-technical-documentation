@@ -1,0 +1,181 @@
+* {
+  font-family: "Roboto Slab", serif;
+  font-size: 15px;
+  /*border: 1px solid black;*/
+}
+
+#navbar {
+  position: fixed;
+  height: 100%;
+  left: 0px;
+  top: 0;
+  border-right: 1px solid black;
+  width: 275px;
+  overflow-y: auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  font-family: "Raleway", sans-serif;
+}
+
+#navbar header {
+  text-align: center;
+  padding-top: 10px;
+}
+
+#navbar ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+#navbar li {
+  margin: 2px;
+}
+
+#navbar li a {
+  text-decoration: none;
+  color: dimgrey;
+}
+
+#navbar ul li a:hover {
+  color: teal;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 285px;
+}
+
+.contents {
+  font-size: 18px;
+  font-weight: bold;
+  color: dimgrey;
+}
+
+.sub-heading {
+  margin-left: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 35px;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  color: darkslategrey;
+  font-size: 20px;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 40px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.tab {
+  margin-left: 40px;
+}
+
+.black-text {
+  color: black;
+}
+
+.purple-text {
+  color: blueviolet;
+  font-weight: bold;
+}
+
+.dark-purple-text {
+  color: blueviolet;
+  font-weight: bold;
+}
+
+.value {
+  color: forestgreen;
+  font-weight: bold;
+}
+
+.tag {
+  color: saddlebrown;
+  font-weight: bold;
+}
+
+.attribute {
+  color: goldenrod;
+  font-weight: bold;
+}
+
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.symbol {
+  font-weight: bold;
+}
+
+code div {
+  font-family: "Inconsolata", monospace;
+}
+
+code div p {
+  font-family: "Inconsolata", monospace;
+}
+
+code .purple-text {
+  font-family: "Inconsolata", monospace;
+  font-weight: normal;
+}
+
+code .tag {
+  font-family: "Inconsolata", monospace;
+  font-weight: normal;
+}
+
+code .attribute {
+  font-family: "Inconsolata", monospace;
+  font-weight: normal;
+}
+
+code .value {
+  font-family: "Inconsolata", monospace;
+  font-weight: normal;
+}
+
+.sample-code {
+  border: 1px solid blue;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.sample-results {
+  border: 1px solid green;
+  padding: 0px 5px;
+}
+
+@media only screen and (max-width: 750px) {
+  /* Smaller than iPhone 8+ */
+  #navbar {
+    width: 175px;
+  }
+
+  #main-doc {
+    position: absolute;
+    margin-left: 185px;
+  }
+  #site-bar ul li {
+    display: inline-block;
+    margin: -15px 8px 0px 8px;
+    text-align: center;
+  }
+}
